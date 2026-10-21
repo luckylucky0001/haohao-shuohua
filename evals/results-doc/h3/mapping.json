@@ -1,0 +1,62 @@
+{
+  "H01": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.6",
+    "C": "haohao-v0.6.2"
+  },
+  "H02": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.6.2",
+    "C": "haohao-v0.6"
+  },
+  "H03": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.6.2",
+    "C": "haohao-v0.6"
+  },
+  "H04": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.6",
+    "C": "haohao-v0.6.2"
+  },
+  "H05": {
+    "A": "haohao-v0.6.2",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.6"
+  },
+  "H06": {
+    "A": "haohao-v0.6",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.6.2"
+  },
+  "H07": {
+    "A": "haohao-v0.6.2",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.6"
+  },
+  "H08": {
+    "A": "haohao-v0.6",
+    "B": "haohao-v0.6.2",
+    "C": "haohao-v0.5.1"
+  },
+  "H09": {
+    "A": "haohao-v0.6",
+    "B": "haohao-v0.6.2",
+    "C": "haohao-v0.5.1"
+  },
+  "H10": {
+    "A": "haohao-v0.6",
+    "B": "haohao-v0.6.2",
+    "C": "haohao-v0.5.1"
+  },
+  "H11": {
+    "A": "haohao-v0.6",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.6.2"
+  },
+  "H12": {
+    "A": "haohao-v0.6.2",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.6"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "N01": {
+    "A": "baseline",
+    "B": "humanizer-zh",
+    "C": "haohao",
+    "D": "shuorenhua"
+  },
+  "N02": {
+    "A": "humanizer-zh",
+    "B": "haohao",
+    "C": "shuorenhua",
+    "D": "baseline"
+  },
+  "N03": {
+    "A": "baseline",
+    "B": "haohao",
+    "C": "shuorenhua",
+    "D": "humanizer-zh"
+  },
+  "N04": {
+    "A": "humanizer-zh",
+    "B": "shuorenhua",
+    "C": "haohao",
+    "D": "baseline"
+  },
+  "R01": {
+    "A": "baseline",
+    "B": "haohao",
+    "C": "humanizer-zh",
+    "D": "shuorenhua"
+  },
+  "R02": {
+    "A": "shuorenhua",
+    "B": "humanizer-zh",
+    "C": "haohao",
+    "D": "baseline"
+  },
+  "R03": {
+    "A": "baseline",
+    "B": "haohao"
+  },
+  "R04": {
+    "A": "haohao",
+    "B": "baseline"
+  },
+  "R05": {
+    "A": "baseline",
+    "B": "haohao"
+  },
+  "R06": {
+    "A": "humanizer-zh",
+    "B": "baseline",
+    "C": "haohao"
+  },
+  "R07": {
+    "A": "humanizer-zh",
+    "B": "baseline",
+    "C": "haohao"
+  },
+  "R08": {
+    "A": "baseline",
+    "B": "haohao",
+    "C": "humanizer-zh"
+  },
+  "R09": {
+    "A": "baseline",
+    "B": "humanizer-zh",
+    "C": "haohao"
+  },
+  "R10": {
+    "A": "humanizer-zh",
+    "B": "haohao",
+    "C": "baseline"
+  },
+  "R11": {
+    "A": "baseline",
+    "B": "humanizer-zh",
+    "C": "haohao"
+  },
+  "R12": {
+    "A": "haohao",
+    "B": "baseline"
+  },
+  "R13": {
+    "A": "haohao",
+    "B": "baseline"
+  },
+  "R14": {
+    "A": "haohao",
+    "B": "baseline"
+  },
+  "W01": {
+    "A": "haohao",
+    "B": "baseline"
+  },
+  "W02": {
+    "A": "baseline",
+    "B": "haohao"
+  },
+  "W03": {
+    "A": "baseline",
+    "B": "haohao"
+  },
+  "W04": {
+    "A": "baseline",
+    "B": "haohao"
+  }
+}

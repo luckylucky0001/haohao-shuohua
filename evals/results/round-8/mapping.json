@@ -1,0 +1,362 @@
+{
+  "N01": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "N02": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "N03": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "N04": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "N05": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "N06": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "N07": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "N08": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "N09": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "N10": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "N11": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "N12": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "N13": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "N14": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R01": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "R02": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "R03": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R04": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "R05": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R06": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R07": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R08": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R09": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R10": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.4.2",
+    "C": "baseline"
+  },
+  "R11": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R12": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "R13": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R14": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R15": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R16": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "R17": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "R18": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R19": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "R20": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "R21": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "R22": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R23": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.4.2",
+    "C": "baseline"
+  },
+  "R24": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R25": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R26": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R27": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "R28": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.4.2",
+    "C": "baseline"
+  },
+  "R29": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R30": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R31": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R32": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "R33": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R34": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "R35": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R36": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "R37": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R38": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "R39": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "R40": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "R41": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "R42": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "R43": {
+    "A": "haohao-v0.4.2",
+    "B": "haohao-v0.5.1",
+    "C": "baseline"
+  },
+  "R44": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.4.2",
+    "C": "baseline"
+  },
+  "W01": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "W02": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "W03": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "W04": {
+    "A": "baseline",
+    "B": "haohao-v0.5.1",
+    "C": "haohao-v0.4.2"
+  },
+  "W05": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.4.2",
+    "C": "baseline"
+  },
+  "W06": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.4.2",
+    "C": "baseline"
+  },
+  "W07": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "W08": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "W09": {
+    "A": "baseline",
+    "B": "haohao-v0.4.2",
+    "C": "haohao-v0.5.1"
+  },
+  "W10": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "W11": {
+    "A": "haohao-v0.5.1",
+    "B": "haohao-v0.4.2",
+    "C": "baseline"
+  },
+  "W12": {
+    "A": "haohao-v0.5.1",
+    "B": "baseline",
+    "C": "haohao-v0.4.2"
+  },
+  "W13": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  },
+  "W14": {
+    "A": "haohao-v0.4.2",
+    "B": "baseline",
+    "C": "haohao-v0.5.1"
+  }
+}

@@ -1,0 +1,26 @@
+{"cases":[
+{"id":"N01","candidates":{
+"A":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":5,"register":5,"overedit":0,"tics":[],"note":"原样返回，说明讲清为何不改，略长但有用"},
+"B":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":4,"register":5,"overedit":0,"tics":[],"note":"原样返回，说明偏长，还多附一段换场合的提议"},
+"C":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":5,"register":5,"overedit":0,"tics":[],"note":"原样返回，一句话说明，干净利落"},
+"D":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":5,"register":5,"overedit":0,"tics":[],"note":"原样返回，说明简短到位"}},
+"ranking":["C","D","A","B"]},
+{"id":"R03","candidates":{
+"A":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":4,"register":5,"overedit":0,"tics":[],"note":"套话清干净，信息完整，稍显紧凑平淡"},
+"B":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":5,"register":5,"overedit":0,"tics":[],"note":"节奏自然、术语准确，提醒60%口径很有用"},
+"C":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":4,"register":4,"overedit":0,"tics":[],"note":"简洁自然，“拆多了”“这篇讲”略随意"},
+"D":{"fidelity":"minor","lost":[],"added":["接口变慢或报错、翻日志难拼出经过的场景描述","每一步花了多久都看得见"],"deai":3,"natural":4,"register":4,"overedit":0,"tics":["希望能帮你少走些弯路","折腾"],"note":"读感好但扩写了原文没有的细节，结尾仍是祝愿套话"}},
+"ranking":["B","A","C","D"]},
+{"id":"R09","candidates":{
+"A":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":5,"register":5,"overedit":0,"tics":[],"note":"标准行政通知，编号清楚，指出日期星期不符"},
+"B":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":4,"register":4,"overedit":0,"tics":[],"note":"简洁准确，但注意事项并成一段不够醒目"},
+"C":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":5,"register":5,"overedit":0,"tics":[],"note":"两段分明，干净正式，日期提醒到位"},
+"D":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":4,"register":5,"overedit":0,"tics":[],"note":"正文好，说明附了修改清单，偏啰嗦"}},
+"ranking":["A","C","B","D"]},
+{"id":"W01","candidates":{
+"A":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":5,"register":5,"overedit":0,"tics":[],"note":"简洁像真人群消息，提醒29日是周四"},
+"B":{"fidelity":"pass","lost":[],"added":[],"deai":3,"natural":4,"register":4,"overedit":0,"tics":["【数据库迁移通知】标题","大家好","需要大家配合"],"note":"信息全、提醒周全，但标题加列表模板感重"},
+"C":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":4,"register":5,"overedit":0,"tics":[],"note":"正文干净，未发现日期星期不符"},
+"D":{"fidelity":"pass","lost":[],"added":[],"deai":5,"natural":4,"register":5,"overedit":0,"tics":[],"note":"正文自然有日期提醒，“我是 Leo”在群里略多余"}},
+"ranking":["A","D","B","C"]}
+]}

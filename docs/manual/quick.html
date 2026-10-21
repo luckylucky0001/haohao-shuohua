@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>好好说话 使用手册</title>
+<link rel="stylesheet" href="quick.css">
+</head>
+<body>
+
+<!-- ============ 第 1 页 ============ -->
+<section class="page">
+<div class="masthead">
+  <div class="seal">好好<br>说话</div>
+  <div class="t">
+    <div class="zh">好好说话</div>
+    <div class="en">haohao-shuohua · 中文去 AI 味 skill · 使用手册</div>
+  </div>
+  <div class="meta">v0.6.3 · 2026 年 10 月<br>MIT 许可</div>
+</div>
+
+<p class="lead">一套中文表达规范：保住事实，不添原文没有的信息，去掉 AI 味，写回中文本来的样子，不造词装深刻。改稿、起草，连 AI 自己的回答和总结都按它来。</p>
+
+<div class="pair">
+  <div class="before"><span class="lab">改之前</span>📢【重要通知】各位小伙伴大家好！为了进一步提升大家的办公体验，打造更加舒适便捷的茶水间环境，我们将于本周四（10 月 22 日）对 3 楼茶水间的咖啡机进行全面升级维护。届时咖啡机将暂停使用一天，给大家带来的不便敬请谅解！感谢大家一直以来的理解与支持！💪</div>
+  <div class="after"><span class="lab">改之后</span>本周四（10 月 22 日）3 楼茶水间的咖啡机要升级维护，停用一天，给大家添麻烦了。</div>
+</div>
+
+<h2><span class="n">1</span>它做三件事</h2>
+<div class="cols">
+  <div class="box"><h3>改稿（默认）</h3><p>把 AI 味重的中文改成能直接发出去的版本。本来就自然的文字，原样交回并告诉你不用改。</p></div>
+  <div class="box"><h3>从零写</h3><p>替你起草消息、邮件、通知、文章时，一开始就按这套标准写，语气按你的要求来。</p></div>
+  <div class="box"><h3>只标问题</h3><p>不动原文，引用原句，指出哪里有腔调、该怎么改。适合想自己动手的时候。</p></div>
+</div>
+
+<h2><span class="n">2</span>安装</h2>
+<table>
+  <thead><tr><th style="width:24%">在哪儿用</th><th>怎么装</th></tr></thead>
+  <tbody>
+    <tr><td>Claude Code</td><td><code>git clone &lt;仓库地址&gt; ~/.claude/skills/haohao-shuohua</code>，装好后说“去 AI 味”“改成人话”会自动触发</td></tr>
+    <tr><td>Codex</td><td><code>git clone &lt;仓库地址&gt; ~/.codex/skills/haohao-shuohua</code>，或在任务里写“读取这个目录的 SKILL.md 按规则改写”</td></tr>
+    <tr><td>Cursor 等编辑器</td><td>把 <code>SKILL.md</code> 正文放进项目规则（如 <code>.cursor/rules/haohao-shuohua.mdc</code>）</td></tr>
+    <tr><td>claude.ai</td><td>设置里上传 skill 文件夹（打成 zip），或把 <code>SKILL.md</code> 正文贴进项目说明</td></tr>
+    <tr><td>ChatGPT、Gemini、Kimi、通义千问</td><td>把 <code>dist/haohao-shuohua-mini.md</code> 的 16 条粘进自定义指令或项目说明</td></tr>
+  </tbody>
+</table>
+<p class="small">本地用 git bundle 拿到的仓库：<code>git clone haohao-shuohua.bundle haohao-shuohua</code>，再按上表放到对应目录。</p>
+
+<h2><span class="n">3</span>底线和改法</h2>
+<div class="box">
+<p><b>冲突时按这个顺序让路：保真 &gt; 场合 &gt; 力度 &gt; 风格。</b>数字、术语原词、因果方向、承诺、条件、否定，以及“计划 / 预计 / 力争 / 可能”的强弱，一条都不动；原文没有的原因、例子、承诺不补，缺的写进给你的提醒。</p>
+<p><b>先看全篇，从含义出发。</b>读懂每段在讲什么，再整体改，最后才落到句子；多余的句子和段落可以删。逐句翻译式的改写，顺不出好文章。</p>
+<p><b>手别太痒。</b>没毛病的句子原样留着，每处改动都说得出治的是什么毛病。去 AI 味也不等于口语化，不会往文字里塞“说白了”、网络梗和表情。</p>
+</div>
+</section>
+
+<!-- ============ 第 2 页 ============ -->
+<section class="page">
+<h2><span class="n">4</span>怎么说</h2>
+<p>直接把文字贴进来，说清用途就行。几种常见说法：</p>
+<div class="prompt">把这段去掉 AI 味，保留信息和我的口气：……</div>
+<div class="prompt">这是 Codex 写的进度汇报，改成正常中文，我要转给组里：……</div>
+<div class="prompt">帮我写一条工作消息，通知下周三晚上数据库迁移，时间 21:00–23:00，期间订单服务只读。</div>
+<div class="prompt">这份 PRD 的背景和目标是 AI 起的稿，评审前帮我改实一点，结构别动：……</div>
+<div class="prompt">只标问题，不改写：……</div>
+
+<h3>可以叠加的要求（都比默认规则优先）</h3>
+<p><span class="tag">只改措辞</span><span class="tag">保留结构</span><span class="tag">可以大改</span><span class="tag">别大改</span><span class="tag">别吹</span><span class="tag">保留小红书语气</span><span class="tag">要能念出来</span><span class="tag">更正式一点</span><span class="tag">控制在 100 字以内</span><span class="tag">记住我的风格</span></p>
+
+<h2><span class="n">5</span>它会清掉什么、留下什么</h2>
+<div class="cols">
+<div>
+<table>
+  <thead><tr><th>会清掉</th><th>举例</th></tr></thead>
+  <tbody>
+    <tr><td>开场铺垫、结尾升华</td><td>在当今……的时代；综上所述；希望对你有帮助</td></tr>
+    <tr><td>公式句、翻案句</td><td>不是……而是……；看似……实则……（全文最多两处）</td></tr>
+    <tr><td>结构排比</td><td>三板斧、五个维度、凑满三个的名词串、文章里的“一、二、三”</td></tr>
+    <tr><td>黑话、夸饰、元话语</td><td>赋能、闭环；重磅、极致；值得深思、不难看出</td></tr>
+    <tr><td>空动词、车轱辘话</td><td>进行了深入的分析 → 分析了；两句说同一件事</td></tr>
+    <tr><td>工程师腔、邮件直译</td><td>聊天里的收敛、兜底、稳稳接住；写这封邮件是想……</td></tr>
+    <tr><td>自造词、装饰性比喻</td><td>为了显得深刻造的新词；比原概念还难懂的比喻</td></tr>
+    <tr><td>标点和痕迹</td><td>中文里的半角标点；utm_source=chatgpt.com</td></tr>
+  </tbody>
+</table>
+</div>
+<div>
+<table>
+  <thead><tr><th>会留下</th><th>举例</th></tr></thead>
+  <tbody>
+    <tr><td>本行术语</td><td>链路追踪、闭环控制、兜底策略、统计学上的“显著”</td></tr>
+    <tr><td>可核查的声明</td><td>行业首个、快 3 倍（只降夸饰，不删事实）</td></tr>
+    <tr><td>固定格式</td><td>特此通知、此致 敬礼、本研究</td></tr>
+    <tr><td>文档的骨架</td><td>标题编号、表格、代码块；P0/必须、≤、TBD、非目标</td></tr>
+    <tr><td>作者的态度</td><td>犹豫、批评、热情、该有的礼数</td></tr>
+    <tr><td>有用的邀请</td><td>有问题可以找我；麻烦您</td></tr>
+    <tr><td>目的和背景</td><td>为了……、免得……；收信人需要的前情</td></tr>
+    <tr><td>文案的劲头</td><td>卖点、行动号召、第一人称的真实感受</td></tr>
+    <tr><td>藏在空话里的事实</td><td>“XX，一座……的城市”里的地名</td></tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+<h2><span class="n">6</span>你会拿到什么</h2>
+<ul>
+  <li><b>默认只给改好的正文</b>，能直接复制去用，前面不加“以下是改写后的版本”。</li>
+  <li><b>必要时正文后最多三行说明</b>：拿不准的地方、建议删但没删的句子、缺来源的说法，或者日期和星期对不上这类事实疑点（正文照原样保留，提醒你确认）。</li>
+  <li><b>本来就自然的文字</b>：原文一字不改交回，加一两句为什么不用改。</li>
+  <li><b>只标问题</b>：引用原句、说明问题和改法，不交全文替换稿。</li>
+</ul>
+<div class="callout"><span class="t">改到什么程度</span>默认标准档：句子和段落改到位，多余的照删，不调章节顺序。说“大改”可以重组段落、调章节；说“别大改”只换词，该删的整段列出来给你定。场合也会影响尺度：对外公告说清说准，客服和致辞的客套是功能件，私人消息才是口语的主场。</div>
+</section>
+
+<!-- ============ 第 3 页 ============ -->
+<section class="page">
+<h2><span class="n">7</span>检查器 hhsh（可选）</h2>
+<p>Go 写的小工具，帮你少漏，不替你判断。需要 Go 1.22 及以上，在 skill 目录里运行：</p>
+<pre><code>go run ./cmd/hhsh lint 稿子.md            <span class="c"># 腔调候选、排版信号、句长节奏</span>
+go run ./cmd/hhsh check 原文.md 改稿.md    <span class="c"># 数字/日期/代码有没有丢或凭空多出；残留和新增腔调</span>
+go run ./cmd/hhsh scan 稿子.md            <span class="c"># 四项零容忍：中文里的半角标点、元话语、机械编号、“不是 X 而是 Y”超过两处</span></code></pre>
+<p class="small">命中只是候选：同一个词在技术文档里可能是术语，在宣传稿里才是腔调。它也不负责“降低 AI 检测率”。</p>
+
+<h2><span class="n">8</span>效果怎么样</h2>
+<p>同一模型分别装 skill、不装 skill 去做，Claude Opus 盲评排名。通用用例 72 条（改稿、本来就自然的对照、从零写）；PRD 和技术方案另有 12 条没参与迭代的留出新题。一共十二轮。</p>
+<div class="kpi">
+  <div><div class="v red">64%</div><div class="k">装 skill 通用胜率</div></div>
+  <div><div class="v">23%</div><div class="k">不装 skill 通用胜率</div></div>
+  <div><div class="v red">28 → 5</div><div class="k">72 题里有保真问题的题数</div></div>
+  <div><div class="v red">0</div><div class="k">v0.6.3 保真失败</div></div>
+</div>
+<table>
+  <thead><tr><th>方案</th><th class="num">通用 72 题 保真</th><th class="num">通用胜率</th><th class="num">文档留出胜率</th></tr></thead>
+  <tbody>
+    <tr class="win"><td>好好说话 v0.6.3（当前）</td><td class="num">68/4/0</td><td class="num">49%</td><td class="num">67%</td></tr>
+    <tr><td>好好说话 v0.5.1（上一版）</td><td class="num">64/8/0</td><td class="num">53%</td><td class="num">33%</td></tr>
+    <tr><td>不装 skill</td><td class="num">44/25/3</td><td class="num">23%</td><td class="num">12%</td></tr>
+  </tbody>
+</table>
+<ul>
+  <li><b>比不装 skill 好得多</b>：通用用例逐题 58 比 14（p &lt; 0.001）；不装 skill 的 72 题里 28 题丢信息、加料或改了语气强弱，装了以后是 4–5 题，都是小偏差。</li>
+  <li><b>v0.6.3 和上一版</b>：通用题打平（逐题 35 比 37），保真小偏差少一半，从零写排名最好；文档留出题 12 题里 8 题排在前面。</li>
+</ul>
+<p class="small">保真是通过 / 小偏差 / 失败。“装和不装”的对比来自第九轮（v0.6）；两版之间的对比来自第十二轮。同一版本重新采样，胜率能差 5–10 个点。</p>
+
+<h2><span class="n">9</span>常见问题</h2>
+<div class="cols">
+<div>
+<h3>改完能通过 AI 检测吗？</h3>
+<p>不保证，也不以此为目标。它在意的是读者读起来自然、信息完整。</p>
+<h3>为什么有时原样返回？</h3>
+<p>原文已经是人话了。硬改只会把口语改成书面语、把细节改成概括。</p>
+</div>
+<div>
+<h3>会替我补内容吗？</h3>
+<p>不会。觉得缺什么，会在正文后提一句，由你决定加不加。</p>
+<h3>“闭环”“兜底”是我们行业的术语？</h3>
+<p>照用。“闭环控制”“兜底策略”是术语，“形成完整闭环”“稳稳兜住”才是腔调。</p>
+</div>
+</div>
+<p class="small">详细的规则、分场景尺度、改写对照和每一轮评测记录都在仓库里：<code>SKILL.md</code>、<code>references/</code>、<code>evals/</code>、<code>docs/iterations.md</code>。</p>
+</section>
+
+</body>
+</html>
