@@ -1,0 +1,122 @@
+{
+  "G01": {
+    "A": "haohao-v0.6.3",
+    "B": "baseline",
+    "C": "haohao-v0.7"
+  },
+  "G02": {
+    "A": "haohao-v0.7",
+    "B": "haohao-v0.6.3",
+    "C": "baseline"
+  },
+  "G03": {
+    "A": "baseline",
+    "B": "haohao-v0.6.3",
+    "C": "haohao-v0.7"
+  },
+  "G04": {
+    "A": "haohao-v0.6.3",
+    "B": "haohao-v0.7",
+    "C": "baseline"
+  },
+  "G05": {
+    "A": "baseline",
+    "B": "haohao-v0.7",
+    "C": "haohao-v0.6.3"
+  },
+  "G06": {
+    "A": "baseline",
+    "B": "haohao-v0.7",
+    "C": "haohao-v0.6.3"
+  },
+  "G07": {
+    "A": "baseline",
+    "B": "haohao-v0.6.3",
+    "C": "haohao-v0.7"
+  },
+  "G08": {
+    "A": "haohao-v0.6.3",
+    "B": "baseline",
+    "C": "haohao-v0.7"
+  },
+  "G09": {
+    "A": "baseline",
+    "B": "haohao-v0.7",
+    "C": "haohao-v0.6.3"
+  },
+  "G10": {
+    "A": "baseline",
+    "B": "haohao-v0.7",
+    "C": "haohao-v0.6.3"
+  },
+  "G11": {
+    "A": "haohao-v0.6.3",
+    "B": "haohao-v0.7",
+    "C": "baseline"
+  },
+  "G12": {
+    "A": "baseline",
+    "B": "haohao-v0.6.3",
+    "C": "haohao-v0.7"
+  },
+  "G13": {
+    "A": "haohao-v0.6.3",
+    "B": "haohao-v0.7",
+    "C": "baseline"
+  },
+  "G14": {
+    "A": "baseline",
+    "B": "haohao-v0.7",
+    "C": "haohao-v0.6.3"
+  },
+  "G15": {
+    "A": "haohao-v0.7",
+    "B": "baseline",
+    "C": "haohao-v0.6.3"
+  },
+  "G16": {
+    "A": "haohao-v0.6.3",
+    "B": "baseline",
+    "C": "haohao-v0.7"
+  },
+  "G17": {
+    "A": "haohao-v0.6.3",
+    "B": "haohao-v0.7",
+    "C": "baseline"
+  },
+  "G18": {
+    "A": "haohao-v0.7",
+    "B": "baseline",
+    "C": "haohao-v0.6.3"
+  },
+  "G19": {
+    "A": "baseline",
+    "B": "haohao-v0.7",
+    "C": "haohao-v0.6.3"
+  },
+  "G20": {
+    "A": "haohao-v0.7",
+    "B": "baseline",
+    "C": "haohao-v0.6.3"
+  },
+  "G21": {
+    "A": "baseline",
+    "B": "haohao-v0.6.3",
+    "C": "haohao-v0.7"
+  },
+  "G22": {
+    "A": "haohao-v0.6.3",
+    "B": "haohao-v0.7",
+    "C": "baseline"
+  },
+  "G23": {
+    "A": "haohao-v0.7",
+    "B": "baseline",
+    "C": "haohao-v0.6.3"
+  },
+  "G24": {
+    "A": "haohao-v0.7",
+    "B": "haohao-v0.6.3",
+    "C": "baseline"
+  }
+}

@@ -2,7 +2,7 @@
 @page {
   size: A4;
   margin: 15mm 16mm 14mm 16mm;
-  @bottom-left { content: "好好说话 haohao-shuohua · 使用手册 v0.6.3"; font: 7.5pt "Noto Sans CJK SC"; color: #8a8378; }
+  @bottom-left { content: "好好说话 haohao-shuohua · 使用手册 v0.7.1"; font: 7.5pt "Noto Sans CJK SC"; color: #8a8378; }
   @bottom-right { content: counter(page) " / 3"; font: 7.5pt "Noto Sans CJK SC"; color: #8a8378; }
 }
 :root {

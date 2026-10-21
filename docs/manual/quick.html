@@ -15,7 +15,7 @@
     <div class="zh">好好说话</div>
     <div class="en">haohao-shuohua · 中文去 AI 味 skill · 使用手册</div>
   </div>
-  <div class="meta">v0.6.3 · 2026 年 10 月<br>MIT 许可</div>
+  <div class="meta">v0.7.1 · 2026 年 10 月<br>MIT 许可</div>
 </div>
 
 <p class="lead">一套中文表达规范：保住事实，不添原文没有的信息，去掉 AI 味，写回中文本来的样子，不造词装深刻。改稿、起草，连 AI 自己的回答和总结都按它来。</p>
@@ -121,26 +121,26 @@ go run ./cmd/hhsh scan 稿子.md            <span class="c"># 四项零容忍：
 <p class="small">命中只是候选：同一个词在技术文档里可能是术语，在宣传稿里才是腔调。它也不负责“降低 AI 检测率”。</p>
 
 <h2><span class="n">8</span>效果怎么样</h2>
-<p>同一模型分别装 skill、不装 skill 去做，Claude Opus 盲评排名。通用用例 72 条（改稿、本来就自然的对照、从零写）；PRD 和技术方案另有 12 条没参与迭代的留出新题。一共十二轮。</p>
+<p>同一模型分别装 skill、不装 skill 去做，Claude Opus 盲评排名。通用用例 72 条，另有 24 条在规则定稿前冻结的新题，写题的人看不到 skill。一共十四轮。</p>
 <div class="kpi">
-  <div><div class="v red">64%</div><div class="k">装 skill 通用胜率</div></div>
-  <div><div class="v">23%</div><div class="k">不装 skill 通用胜率</div></div>
-  <div><div class="v red">28 → 5</div><div class="k">72 题里有保真问题的题数</div></div>
-  <div><div class="v red">0</div><div class="k">v0.6.3 保真失败</div></div>
+  <div><div class="v red">71%</div><div class="k">新题上装 skill 的胜率</div></div>
+  <div><div class="v">15%</div><div class="k">新题上不装 skill 的胜率</div></div>
+  <div><div class="v red">12 → 5</div><div class="k">24 道新题里有保真问题的题数</div></div>
+  <div><div class="v red">0</div><div class="k">v0.7.1 保真失败</div></div>
 </div>
 <table>
-  <thead><tr><th>方案</th><th class="num">通用 72 题 保真</th><th class="num">通用胜率</th><th class="num">文档留出胜率</th></tr></thead>
+  <thead><tr><th>方案</th><th class="num">新题 24 保真</th><th class="num">新题胜率</th><th class="num">通用 72 胜率</th></tr></thead>
   <tbody>
-    <tr class="win"><td>好好说话 v0.6.3（当前）</td><td class="num">68/4/0</td><td class="num">49%</td><td class="num">67%</td></tr>
-    <tr><td>好好说话 v0.5.1（上一版）</td><td class="num">64/8/0</td><td class="num">53%</td><td class="num">33%</td></tr>
-    <tr><td>不装 skill</td><td class="num">44/25/3</td><td class="num">23%</td><td class="num">12%</td></tr>
+    <tr class="win"><td>好好说话 v0.7.1（当前）</td><td class="num">22/2/0</td><td class="num">52%</td><td class="num">51%</td></tr>
+    <tr><td>好好说话 v0.7</td><td class="num">19/4/1 · 22/2/0</td><td class="num">71% · 50%</td><td class="num">45% · 41%</td></tr>
+    <tr><td>不装 skill</td><td class="num">12/12/0</td><td class="num">15%</td><td class="num">23%</td></tr>
   </tbody>
 </table>
 <ul>
-  <li><b>比不装 skill 好得多</b>：通用用例逐题 58 比 14（p &lt; 0.001）；不装 skill 的 72 题里 28 题丢信息、加料或改了语气强弱，装了以后是 4–5 题，都是小偏差。</li>
-  <li><b>v0.6.3 和上一版</b>：通用题打平（逐题 35 比 37），保真小偏差少一半，从零写排名最好；文档留出题 12 题里 8 题排在前面。</li>
+  <li><b>比不装 skill 好得多</b>：新题上逐题 20 比 4（p &lt; 0.01）；不装 skill 的 24 题里一半丢信息、加料或改了语气强弱。</li>
+  <li><b>版本之间打平</b>：v0.7.1 对上一个稳定版 v0.5.1 逐题 34 比 38，参考资料扩了三倍多也没有拖累效果。</li>
 </ul>
-<p class="small">保真是通过 / 小偏差 / 失败。“装和不装”的对比来自第九轮（v0.6）；两版之间的对比来自第十二轮。同一版本重新采样，胜率能差 5–10 个点。</p>
+<p class="small">保真是通过 / 小偏差 / 失败。胜率是和同一轮里的其他方案比：v0.7.1 那行出自第十四轮和 H6，不装 skill 那行出自第九轮和 H5，“·”两边是 v0.7 在两轮里的成绩。同一份输出换一批判官，胜率能差 10 个点以上。</p>
 
 <h2><span class="n">9</span>常见问题</h2>
 <div class="cols">
@@ -157,7 +157,7 @@ go run ./cmd/hhsh scan 稿子.md            <span class="c"># 四项零容忍：
 <p>照用。“闭环控制”“兜底策略”是术语，“形成完整闭环”“稳稳兜住”才是腔调。</p>
 </div>
 </div>
-<p class="small">详细的规则、分场景尺度、改写对照和每一轮评测记录都在仓库里：<code>SKILL.md</code>、<code>references/</code>、<code>evals/</code>、<code>docs/iterations.md</code>。</p>
+<p class="small">详细的规则、分场景尺度、改写对照和每一轮评测记录都在仓库里：<code>SKILL.md</code>、<code>references/</code>、<code>evals/</code>、<code>docs/guide.md</code>、<code>docs/iterations.md</code>。</p>
 </section>
 
 </body>

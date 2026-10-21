@@ -25,19 +25,17 @@ var (
 	urlRe    = regexp.MustCompile(`https?://[^\s)>\]]+`)
 )
 
-// MaskCode 把代码块、行内代码和链接替换成等长的空白（保留换行），
-// 这样规则不会命中代码里的内容，行号也不变。
+// MaskCode 把代码块、行内代码和链接替换成等长的空白（byte 数不变，保留换行），
+// 这样规则不会命中代码里的内容，命中位置的 byte 偏移和行号也不变。
 func MaskCode(s string) string {
 	blank := func(m string) string {
-		var b strings.Builder
-		for _, r := range m {
-			if r == '\n' {
-				b.WriteRune('\n')
-			} else {
-				b.WriteRune(' ')
+		b := []byte(m)
+		for i, c := range b {
+			if c != '\n' {
+				b[i] = ' '
 			}
 		}
-		return b.String()
+		return string(b)
 	}
 	s = fenceRe.ReplaceAllStringFunc(s, blank)
 	s = inlineRe.ReplaceAllStringFunc(s, blank)

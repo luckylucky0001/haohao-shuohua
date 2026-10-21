@@ -22,7 +22,7 @@ import (
 	"haohao-shuohua/lexicon"
 )
 
-const version = "0.6.3"
+const version = "0.7.1"
 
 func main() {
 	if len(os.Args) < 2 {
